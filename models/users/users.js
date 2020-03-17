@@ -44,7 +44,9 @@ router.post('/verifycode', (req, res) => {
         phoneNumber: '91' + user_data.phoneNumber,
         code: user_data.code
     }
+    console.log(query)
     verifications.findOne(query, function (error, success) {
+        console.log(error,success)
         if (!error && success != null) {
             users.findOne({
                 phoneNumber: query.phoneNumber
