@@ -61,7 +61,7 @@ router.post('/verifycode', (req, res) => {
                     res.status(200).json({
                         error: false,
                         data: success,
-                        messsage: 'User with this phone number not found.'
+                        message: 'User with this phone number not found.'
                     })
                 }
             })
@@ -69,7 +69,7 @@ router.post('/verifycode', (req, res) => {
             res.status(200).json({
                 error: true,
                 data: error,
-                messsage: 'Wrong verification code'
+                message: 'Wrong verification code'
             })
         }
     })
