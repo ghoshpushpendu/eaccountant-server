@@ -20,6 +20,8 @@ var storage = multer.diskStorage({
 // Api for Image Upload
 router.post('/upload', (request, response) => {
     var image;
+
+    console.log(request)
     
 
     let imageResponse = {};
