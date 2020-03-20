@@ -105,7 +105,7 @@ router.post('/upload', (request, response) => {
 
         }else{
             imageResponse.error = true;
-            imageResponse.message = `Error :` + error.message;
+            imageResponse.message = `Error :`;
             response.status(500).json({});
         }
     });
