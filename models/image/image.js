@@ -103,6 +103,10 @@ router.post('/upload', (request, response) => {
                 })
 
 
+        }else{
+            imageResponse.error = true;
+            imageResponse.message = `Error :` + error.message;
+            response.status(500).json({});
         }
     });
 });
