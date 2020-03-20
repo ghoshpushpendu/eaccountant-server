@@ -21,7 +21,7 @@ var storage = multer.diskStorage({
 router.post('/upload', (request, response) => {
     var image;
 
-    console.log(request)
+    console.log(request.file)
     
 
     let imageResponse = {};
